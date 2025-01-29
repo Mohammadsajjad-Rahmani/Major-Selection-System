@@ -30,10 +30,22 @@ This web-based application allows users (students) to answer a set of questions 
 3. The system calculates the final score and suggests the **best matching major**.  
 4. The user receives a **final recommendation** along with some guidance about the selected field.  
 
-- [Screenshots](#screenshots/1.jpg)
-- [Screenshots](#screenshots/2.jpg)  
+## Screenshots  
+### ⁉️ Question Page  
+![Question Page](screenshots/home.jpg)  
 
-## Setup & Installation  
+### 📃 Result Page  
+![Result Page](screenshots/login.jpg)  
+
+
+### 🔹Setup & Installation  
+
 1. Clone the repository:  
    ```bash
    git clone https://github.com/Mohammadsajjad-Rahmani/Major-Selection-System.git
+2. Install dependencies: pip install -r requirements.txt
+3. Run migrations: python manage.py makemigrations & python manage.py migrate
+4. Start the server: python manage.py runserver
+
+
+
