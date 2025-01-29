@@ -32,10 +32,10 @@ This web-based application allows users (students) to answer a set of questions 
 
 ## Screenshots  
 ### ⁉️ Question Page  
-![Question Page](screenshots/home.jpg)  
+![Question Page](screenshots/1.jpg)  
 
 ### 📃 Result Page  
-![Result Page](screenshots/login.jpg)  
+![Result Page](screenshots/2.jpg)  
 
 
 ### 🔹Setup & Installation  
