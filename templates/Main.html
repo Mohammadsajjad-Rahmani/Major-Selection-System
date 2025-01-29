@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartAdvisor</title>
+    {% include 'shared/CSS.html' %}
+</head>
+<body>
+<div class="container" id="user-form">
+    <h2>Enter Your Information</h2>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <input type="date" id="dob" required>
+    <button class="btn" onclick="startQuiz()">Start Test</button>
+</div>
+
+<div class="container" id="quiz-container" style="display: none;">
+    <div id="question-container">
+        <div class="question">Question will appear here.</div>
+        <ul class="options"></ul>
+    </div>
+    <div class="container" id="additional-questions-container" style="display: none;">
+        <div id="additional-question-container">
+            <div class="question">Additional Question will appear here.</div>
+            <ul class="options"></ul>
+        </div>
+        <button class="btn" onclick="nextAdditionalQuestion()">Next</button>
+    </div>
+
+    <button class="btn" onclick="nextQuestion()">Next</button>
+</div>
+
+<div class="container report" id="report-container" style="display: none;">
+    <h2>Your Test Results</h2>
+    <div class="user-info">
+        <h3>User Information</h3>
+        <p><strong>Name:</strong> <span id="user-name"></span></p>
+        <p><strong>Gender:</strong> <span id="user-gender"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="user-dob"></span></p>
+    </div>
+
+    <div class="interests">
+        <h3>Interests</h3>
+        <ul id="interests-list"></ul>
+    </div>
+
+    <div class="recommendations">
+        <h3>Career Recommendations</h3>
+        <ul id="recommendations-list"></ul>
+    </div>
+</div>
+
+
+</body>
+{% include 'shared/JS.html' %}
+</html>
