@@ -8,8 +8,6 @@ This repository contains a simple **Major Selection System** built using **Djang
 - [Technologies Used](#technologies-used)  
 - [How It Works](#how-it-works)  
 - [Setup & Installation](#setup--installation)  
-- [Future Improvements](#future-improvements)  
-- [Conclusion](#conclusion)  
 
 ## Project Overview  
 This web-based application allows users (students) to answer a set of questions related to their interests and skills. Based on their responses, the system **suggests the best-matching major** for them. The recommendation is generated using a simple logic-based scoring system.
