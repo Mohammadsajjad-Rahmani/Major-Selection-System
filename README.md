@@ -19,12 +19,11 @@ This web-based application allows users (students) to answer a set of questions 
 ✔️ Dynamic scoring system for major selection  
 ✔️ Django-based backend  
 ✔️ Simple authentication system (optional)  
-✔️ Responsive UI (using Bootstrap)  
+✔️ Responsive UI 
 
 ## Technologies Used  
 - **Django** (Backend & Framework)  
 - **HTML, CSS, JavaScript** (Frontend)  
-- **Bootstrap** (UI Design)  
 - **SQLite** (Database)  
 
 ## How It Works  
@@ -39,5 +38,4 @@ This web-based application allows users (students) to answer a set of questions 
 ## Setup & Installation  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/USERNAME/Major-Selection-System.git
-   cd Major-Selection-System
+   git clone https://github.com/Mohammadsajjad-Rahmani/Major-Selection-System.git
