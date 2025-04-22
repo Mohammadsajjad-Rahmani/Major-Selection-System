@@ -58,7 +58,12 @@ function startQuiz() {
     const dob = document.getElementById('dob').value;
 
     if (!name || !gender || !dob) {
-        alert("Please fill in all fields.");
+        // alert("Please fill in all fields.");
+        Swal.fire({
+            text: "Please fill in all fields.",
+            icon: "warning",
+            width: 400,
+        });
         return;
     }
 
@@ -74,7 +79,12 @@ function startQuiz() {
     }
 
     if (age < 16 || age > 80) {
-        alert("Sorry, this test is only available for users between 16 and 80 years old.");
+        // alert("Sorry, this test is only available for users between 16 and 80 years old.");
+        Swal.fire({
+            text: "Sorry, this test is only available for users between 16 and 80 years old.",
+            icon: "info",
+            width: 400,
+        });
         return;
     }
 
@@ -123,7 +133,12 @@ function updateSelection(selector, selectedValue) {
 function nextQuestion() {
     if (currentQuestionIndex < questions.length) {
         if (!selectedAnswers[currentQuestionIndex]) {
-            alert("Please select an answer.");
+            // alert("Please select an answer.");
+            Swal.fire({
+                text: "Please select an answer.",
+                icon: "warning",
+                width: 400,
+            });
             return;
         }
 
@@ -134,7 +149,12 @@ function nextQuestion() {
             loadQuestion();
         }
     } else if (!difficultyLevel) {
-        alert("Please select a difficulty level.");
+        // alert("Please select a difficulty level.");
+        Swal.fire({
+            text: "Please select a difficulty level.",
+            icon: "warning",
+            width: 400,
+        });
     } else {
         showReport();
     }
